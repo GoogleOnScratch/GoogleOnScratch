@@ -67,6 +67,11 @@
 		.green {
 			color: #34a853;
 		}
+		@media only screen and (max-device-width: 550px) {
+			.welcome {
+				display: none;
+			}
+		}
 	</style>
 </head>
 
@@ -74,9 +79,8 @@
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 		<header class="mdl-layout__header">
 			<div class="mdl-layout__header-row">
-				<!-- Title
-				<span class="mdl-layout-title">Title</span>-->
-				<img src="https://cdn2.scratch.mit.edu/get_image/user/24191744_45x45.png">
+				<!-- Title -->
+				<span class="mdl-layout-title">Title</span>
 				<!-- Add spacer, to align navigation to the right -->
 				<div class="mdl-layout-spacer"></div>
 				<!-- Navigation. We hide it in small screens. -->
@@ -98,7 +102,7 @@
 			</nav>
 		</div>
 		<main class="mdl-layout__content">
-			<div class="full-width header">
+			<div class="full-width header welcome">
 				<div class="full-width-inner">
 					<h1 class="v-center logo">
 						--<c class="blue">G</c><c class="red">o</c><c class="yellow">o</c><c class="blue">g</c><c class="green">l</c><c class="red">e</c>-- on Scratch
